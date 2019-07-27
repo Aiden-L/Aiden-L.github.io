@@ -1,0 +1,161 @@
+﻿/*style below*/
+.linksame {
+    font-size: 12px;
+    border: 2px;
+    width: 73px;
+    text-align: center;
+    list-style: none;
+    float: left;
+}
+.linkkuang {
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: white;
+    margin: 0 auto;
+    width: 830px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    left: 13%;
+    margin-top:134px;
+}
+.below {
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-top: 69px;
+}
+#zhongjianhang{
+    height:20px;
+    padding-top:6px;
+}
+#yejiao1 {
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: white;
+    width: 58.5%;
+    text-align: right;
+    float: left;
+}
+#yejiao2 {
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: white;
+    width: 38.5%;
+    text-align: right;
+    float: left;
+}
+
+/*链接css*/
+.link1 {
+	color: white;
+}
+
+.link1:link {
+    text-decoration: none;
+}
+
+.link1:visited {
+    color: white;
+}
+
+.link1:active {
+    color: white;
+}
+
+.link1:hover {
+    text-decoration: underline;
+}
+.link2 {
+    color: white;
+}
+
+.link2:link {
+    text-decoration: none;
+    }
+
+.link2:visited {
+    color: white;
+}
+
+.link2:active {
+    color: white;
+}
+.link3 {
+    color: #666;
+    font-size: 12px;
+    font-family: helvetica,arial,微软雅黑,华文黑体;
+}
+
+.link3:link {
+    text-decoration: none;
+}
+
+.link3:visited {
+    color: #666;
+}
+
+.link3:active {
+    color: #666;
+}
+
+.link3:hover {
+    text-decoration: underline;
+}
+.link4 {
+    color: #3481cf;
+	font-size: 16px;
+	font-family: helvetica,arial,微软雅黑,华文黑体;
+}
+
+.link4:link {
+    text-decoration: none;
+}
+
+.link4:visited {
+    color: #3481cf;
+}
+
+.link4:active {
+    color: #3481cf;
+}
+
+.link4:hover {
+    text-decoration: underline;
+}
+
+#error_tips {
+    position: absolute;
+    width: 258px;
+    left: 50%;
+    margin-left: -129px;
+    top: 50%;
+}
+#error_logo {
+    position: absolute;
+    left: 3px;
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+    background: url(../background/icon_3_tiny.png) 0 -162px no-repeat;
+    
+}
+#err_m {
+    display: inline-block;
+    padding-left: 24px;
+    line-height: 18px;
+    color: #ff3b30;  
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    font-family: helvetica,arial,微软雅黑,华文黑体;
+    font-size: 12px;
+}
+/*快速安全登录框*/
+#quickLogInBox{
+	background-color: #ffffff;
+	margin: 0 auto;
+    border: 2px solid #eee;
+    position: absolute;
+}

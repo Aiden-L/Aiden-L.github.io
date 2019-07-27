@@ -1,0 +1,136 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>QQ空间-分享生活，留住感动</title>
+	
+	<link rel="Shortcut Icon" href="background/favicon.ico" type="image/x-icon"/>
+
+    <style type="text/css">
+        body {
+            /*background-image: url(20171122191603_896cd9.jpg);*/
+            background-repeat: no-repeat;
+            /*background-position: 100% 20%;*/
+            background-position:center center;
+            background-attachment:fixed;
+            background-size: cover;
+        }
+
+        .icons {
+            width: 30px;
+        }
+        .icons:hover{
+            padding-top:10px;
+            transition-duration: 500ms;
+        }
+        
+        /*div{
+            border: 1px solid black;
+        }*/
+        
+        #login_button{
+        	width: 267px;
+        	height: 38px;
+        	opacity: 0.5;
+			filter: alpha(opacity = 50);
+        	position: absolute;
+        	/*border: 1px solid #5b9fcb;*/
+        	left: 73px;
+        	top: 216px;
+        }
+    </style>
+
+    <script type="text/javascript" src="JS/littleBlock.js"></script>
+    
+    <script type="text/javascript" src="JS/DEDSEC.js"></script>
+
+    <link href="css/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<script type="text/javascript">
+		//背景切换功能
+		switch(Math.floor(Math.random()*4)){
+			case 0: document.body.style.backgroundImage = "url(background/background01.jpg)";break;
+			case 1: document.body.style.backgroundImage = "url(background/background02.jpg)";break;
+			case 2: document.body.style.backgroundImage = "url(background/background03.jpg)";break;
+			case 3: document.body.style.backgroundImage = "url(background/background04.jpg)";break;
+			default: document.body.style.backgroundImage = "url(background/background01.jpg)";break;
+		}
+	</script>
+	
+    <!--账号密码登录-->
+    <div style="height:315px; margin-top:95px; padding-left:300px;">
+        <div style="float:left">
+            <img src="background\qzone-login-logo2.png" width="251" />
+        </div> 
+		
+        <div style="position:relative; width: 415px; height: 315px; float:left; margin-top:11px; margin-left:210px; text-align: center;">
+            <img width="415" src="login\xiugaiban.png" />
+            
+            <!--登录框-->
+            <div style="position:absolute; width:415px; height:315px; left:0; top:0;">
+                <div style="font-size: 20px; color: #333; font-family: helvetica,arial,微软雅黑,华文黑体; margin-top:12px;">帐号密码登录</div>
+                <div style="color: #666;font-size: 16px;font-family: helvetica,arial,微软雅黑,华文黑体;margin-top:15px;">推荐使用<a class="link4" id="quickLogIn" href="javascript:;">快速安全登录</a>，防止盗号。</div>
+                	
+                <!--错误信息提醒-->
+                <div id="error_tips" style="display: none; top: 76px;">
+                	<span id="error_logo"></span>
+                	<span id="err_m"></span>
+                </div>
+                <!--输入框-->
+                <div style="margin-top:36px;"><input id="account" style="font-size:14px; width:255px;height:35px;border:none;padding-left:10px;outline-color:#bee9ff;" placeholder="支持QQ号/邮箱/手机号登录" /></div>
+                <div style="margin-top:17px;"><input id="password" style="font-size:15px; width:255px;height:35px;border:none;padding-left:10px;outline-color:#bee9ff;" type="password" placeholder="密码" /></div>
+                <!--登录按钮-->
+                <div id="login_button"></div>
+                
+                <div style="color:black; text-align:right; margin-top :90px; padding-right:11px;font-size: 12px;">
+                    <a class="link3" target="_blank" href="https://aq.qq.com/v2/uv_aq/html/reset_pwd/pc_reset_pwd_input_account.html?v=3.0&old_ver_account=">忘了密码?</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="link3" target="_blank" href="https://ssl.zc.qq.com/v3/index-chs.html">注册新账号</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="link3" target="_blank" href="https://support.qq.com/products/14800">意见反馈</a>
+                </div>
+                
+            </div>
+        		
+        	<!--快速安全登录-->
+		    <div id="quickLogInBox" style="display: none; width: 412px; height:309px;position: absolute; top:0px; left: 0px;">
+		    	<div style="position: relative; font-size: 20px; color: #333; margin-bottom: 16px; text-align: center; font-family: helvetica,arial,微软雅黑,华文黑体; display: block;margin-top:9px;">快速安全登录</div>
+		    	<div style="display: block;color: #666;font-size: 16px;font-family: helvetica,arial,微软雅黑,华文黑体;text-align: center;position: relative;margin-bottom: 36px;zoom: 1;">请使用<a class="link4" href="http://im.qq.com/mobileqq/#from=login" target="_blank">QQ手机版</a>扫描二维码，<br>或点击头像授权登录。</div>
+		    	<img id="QRcord" src="login/QRcordForLogIn.png" style="width: 84px;height: 84px;margin-left: 0px;border: 1px solid #e9e9e9;"/>
+		    	<div style="color:black; text-align:right; margin-top: 70px; padding-right:10px;font-size: 12px;">
+		            <a id="toAccount" class="link3" href="javascript:;">账号密码登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		            <a class="link3" target="_blank" href="https://ssl.zc.qq.com/v3/index-chs.html">注册新账号</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		            <a class="link3" target="_blank" href="https://support.qq.com/products/14800">意见反馈</a>
+		        </div>
+		        <img id="QRguide" src="login/saoyisao.png" style="height: 200px;width: 160px; position: absolute; top: 92px; left: 260px; display: none;"/>
+		    </div>
+        </div>
+    </div>
+    
+    <!--页尾链接-->
+    <div class="linkkuang">
+        <ul>
+            <li class="linksame"><a class="link2" href="http://z.qzone.com/download.html" target="_blank"><img class="icons" src="icons\iconiPhone.png" /><br /><span>iPhone</span></a></li>
+            <li class="linksame"><a class="link2" href="http://z.qzone.com/download.html" target="_blank"><img class="icons" src="icons\iconiPad.png" /><br /><span>iPad</span></a></li>
+            <li class="linksame"><a class="link2" href="http://z.qzone.com/download.html" target="_blank"><img class="icons" src="icons\iconAndroid.png" /><br /><span>Android</span></a></li>
+            <li class="linksame"><a class="link2" href="http://z.qzone.com/download.html" target="_blank"><img class="icons" src="icons\iconWindowsphone.png" /><br /><span>Windows Phone</span></a></li>
+            <li class="linksame"><a class="link2" href="http://z.qzone.com/download.html" target="_blank"><img class="icons" src="icons\iconelsephone.png" /><br /><span>其他手机</span></a></li>
+        </ul>
+    </div>
+    <div class="below">
+        <a class="link1" href="http://support.qq.com/discuss/46_1.shtml" target="_blank">反馈建议</a> |
+        <a class="link1" href="http://qzone.qzone.qq.com/" target="_blank">官方空间</a> |
+        <a class="link1" href="http://act.qzone.qq.com/" target="_blank">空间活动</a> |
+        <a class="link1" href="http://my.qzone.qq.com/" target="_blank">空间应用</a> |
+        <a class="link1" href="https://abcmouse.qq.com/" title="ABCmouse腾讯版" target="_blank">ABCmouse腾讯版</a> |
+        <a class="link1" href="http://user.qzone.qq.com/949589999/main" target="_blank">腾讯原创馆</a> |
+        <a class="link1" href="http://connect.qq.com/" target="_blank">QQ互联</a> |
+        <a class="link1" href="http://connect.qq.com/intro/login/" target="_blank">QQ登录</a> |
+        <a class="link1" href=""> 社交组件</a> |
+        <a class="link1" href="http://wiki.open.qq.com/wiki/%E6%8A%95%E8%AF%89%E6%8C%87%E5%BC%95" target="_blank">应用侵权投诉</a> |
+        <a class="link1" href="http://wiki.open.qq.com/wiki/Tencent_Open_Platform_Complaint_Guidelines" target="_blank">Complaint Guidelines</a>
+        <div id="zhongjianhang">Copyright © 2005 - 2019 Tencent.<a class="link1" target="_blank" href="http://www.tencent.com/en-us/le/copyrightstatement.shtml">All Rights Reserved.</a></div>
+    </div>
+    <div id="yejiao1">腾讯公司 <a class="link1" href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">版权所有</a> <a class="link1" href="http://www.qq.com/culture.shtml" target="_blank">粤网文[2017]6138-1456号</a></div>
+    <div id="yejiao2"><span>背景来源&nbsp;&nbsp;&nbsp;</span><a class="link1" target="_blank" href="https://isux.tencent.com/">腾讯ISUX</a></div>
+</body>
+</html>
