@@ -122,35 +122,46 @@
 				tips.style.display = "none";
 			},5000);
 		}
+			//判断函数
+		function judger(){
+			if(account.value == ""){
+				tips.style.display = "";
+				tipText.innerHTML = "你还没有输入帐号！";
+				MytimerToTips();
+			}else{
+				if(password.value == ""){
+					tips.style.display = "";
+					tipText.innerHTML = "你还没有输入密码！";
+					MytimerToTips();
+				}else{
+					if(account.value == "Aiden" && password.value == "intoDEDSEC"){
+						location = "pages/DEDSEC/DEDSECindex.html";
+					}else{
+						tips.style.display = "";
+						tipText.innerHTML = "你输入的帐号或密码不正确，请重新输入。";
+						password.value = "";
+						MytimerToTips();
+					}
+				}
+			}
+			//判断结束
+		}
 		//登录按钮功能
 		button1.onmousedown = function(){
 			button1.style.border = "2px solid #5b9fcb";
 
 			button1.onmouseup = function(){
 				button1.style.border = "";
-				if(account.value == ""){
-					tips.style.display = "";
-					tipText.innerHTML = "你还没有输入帐号！";
-					MytimerToTips();
-				}else{
-					if(password.value == ""){
-						tips.style.display = "";
-						tipText.innerHTML = "你还没有输入密码！";
-						MytimerToTips();
-					}else{
-						if(account.value == "Aiden" && password.value == "intoDEDSEC"){
-							location = "pages/DEDSEC/DEDSECindex.html";
-						}else{
-							tips.style.display = "";
-							tipText.innerHTML = "你输入的帐号或密码不正确，请重新输入。";
-							password.value = "";
-							MytimerToTips();
-						}
-					}
-				}
-				//判断结束
+				judger();
 			};
 		};
+		//enter建功能
+		document.onkeydown = function(event){
+			event = event || window.event;
+			if(event.keyCode == 13){
+				judger();
+			}
+		} 
 
 		//快速登录与账号登录的切换
 		var toQuick = document.getElementById("quickLogIn");
