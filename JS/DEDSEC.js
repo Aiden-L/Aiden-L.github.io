@@ -1,4 +1,5 @@
-﻿window.onload = function(){
+/*
+window.onload = function(){
 	//账号初步验证功能
 	var button1 = document.getElementById("login_button");
 	var account = document.getElementById("account");
@@ -64,5 +65,5 @@
 	document.getElementById("QRcord").onmouseleave = function(){
 		QRguide.style.display = "none";
 	};
-}
+}*/
  
