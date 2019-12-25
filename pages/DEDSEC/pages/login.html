@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="Shortcut Icon" href="../icon/ctos.ico" type="image/x-icon"/>
+		
+		<link href="../css/DedsecMain.css" rel="stylesheet" type="text/css" />
+		
+		<style type="text/css">
+			/*div{
+	            border: 1px solid white;
+	        }*/
+			body {
+	            /*background-image: url(../img/DEDSEClogin.png);*/
+	           	background-color: #000000;
+	        }
+			#loginImage{
+				position: absolute;
+				float: left;
+				padding: 10px;
+				padding-top: 50px;
+				width: 1000px;
+				z-index: -1;
+			}
+			#loginBlock{
+				color: white;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				position: absolute;
+				float: left;
+				padding-left: 1100px;
+				padding-top: 180px;
+			}
+			.text_input{
+				
+				font-size: 16px;
+				line-height: 21px;
+				background-color: rgba( 0, 0, 0, 0.2 );
+				color: #fff;
+				border: 1px solid white;
+				
+				border-radius: 3px;
+				box-shadow: 1px 1px 0px #45556c;
+				width: 300px;
+				padding: 5px;
+				margin: 4px 0;
+			}
+			#logInButtonBox{
+				position: relative;
+				padding-left: 110px;
+				padding-top: 20px;
+			}
+			#logInButton{
+				margin: 0;
+				border-radius: 2px;
+				border: none;
+				padding: 1px;
+				width: 100px;
+				height:30px; 
+				cursor: pointer;
+				color: black;
+				background: white;
+				
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="topMenu">
+			<!-- 一级菜单 -->
+			<ul>
+				<!-- 二级菜单 -->
+				<li class="dropdown">
+					<a href="signIn.html">
+						攻略集锦
+					</a>
+					<ul class="dropdown-content">
+						<li>
+							<a href="signIn.html">HTML教程</a>
+						</li>
+						<li>
+							<a href="signIn.html">CSS教程</a>
+						</li>
+						<li>
+							<a href="signIn.html">HTML5教程</a>
+						</li>
+						<li>
+							<a href="signIn.html">CSS3教程</a>
+						</li>
+					</ul>
+				</li>
+				<!-- 二级菜单:indienova -->
+				<li class="dropdown">
+					<a href="signIn.html">
+						工具大全
+					</a>
+					<ul class="dropdown-content">
+						<li>
+							<a href="pages/Tools/passwordCreater.html">随机密码生成器</a>
+						</li>
+						<li>
+							<a href="pages/Tools/MorseCode.html">摩尔斯电码破解器</a>
+						</li>
+					</ul>
+				</li>
+				<!-- 二级菜单:支持中心 -->
+				<li class="dropdown">
+					<a href="signIn.html">
+						支持中心
+					</a>
+					<ul class="dropdown-content">
+						<li>
+							<a href="signIn.html">开发中</a>
+						</li>
+						<li>
+							<a href="signIn.html">开发中</a>
+						</li>
+					</ul>
+				</li>
+				<!-- 右浮动的一级菜单选项:登陆 -->
+				<li id="baiDu">
+					<a href="signIn.html">
+						注册
+					</a>				
+				</li>
+			</ul>
+		</div>
+		
+		<!-- 主要内容的div区域，存放网站页面的框架 -->
+		<div class="mainContent" style="overflow: auto;">
+			<div id="loginImage">
+				<img src="../img/DEDSECchange.png" style="width: 100%;"/>
+			</div>
+			
+			<div id="loginBlock">
+				<div class="input_title" style="font-size: 30px; padding: 5px; position: relative; padding-left: 65px; padding-bottom: 20px;">征途从此开始</div>
+				<div class="login_row">
+					<div class="input_title">帐户名称</div>
+					<input class="text_input" type="text" name="username" id="input_username" value="">
+				</div>
+				<div class="login_row">
+					<div class="input_title">密码</div>
+					<input class="text_input" type="password" name="password" id="input_password" autocomplete="off">
+				</div>
+				<div id="logInButtonBox">
+					<button id="logInButton" type="submit">
+						<span>登录</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

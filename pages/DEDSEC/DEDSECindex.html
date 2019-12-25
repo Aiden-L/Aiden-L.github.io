@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Welcome to DEDSEC</title>
+		
+		<link rel="Shortcut Icon" href="icon/ctos.ico" type="image/x-icon"/>
+		
+		<link href="css/DedsecMain.css" rel="stylesheet" type="text/css" />
+		
+		<script type="text/javascript">
+			window.onload = function(){
+				window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+			        while (window.orientation === 180 || window.orientation === 0) {
+			            alert("推荐横屏显示");         
+			        }       
+				}, false);
+			};
+		</script>
+		<style type="text/css">
+			/*body {
+	            background-image: url(img/dedsecX1.png);
+	            background-repeat: no-repeat;
+	            background-position:center center;
+	            background-attachment:fixed;
+	            background-size: cover;
+	        }*/
+	        body {
+	       		background-color: #000000;
+	        }
+	        #bgvideo{
+	        	position: fixed;
+	      		width: 100%;
+			    overflow: hidden;
+			    z-index: -100;
+	        }
+		</style>
+	</head>
+	<body>
+		<div class="topMenu">
+			<!-- 一级菜单 -->
+			<ul>
+				<!-- 二级菜单 -->
+				<li class="dropdown">
+					<a href="pages/signIn.html">
+						攻略集锦
+					</a>
+					<ul class="dropdown-content">
+						<li>
+							<a href="pages/signIn.html">HTML教程</a>
+						</li>
+						<li>
+							<a href="pages/signIn.html">CSS教程</a>
+						</li>
+						<li>
+							<a href="pages/signIn.html">HTML5教程</a>
+						</li>
+						<li>
+							<a href="pages/signIn.html">CSS3教程</a>
+						</li>
+					</ul>
+				</li>
+				<!-- 二级菜单:indienova -->
+				<li class="dropdown">
+					<a href="pages/signIn.html">
+						工具大全
+					</a>
+					<ul class="dropdown-content">
+						<li>
+							<a href="pages/Tools/passwordCreater.html">随机密码生成器</a>
+						</li>
+						<li>
+							<a href="pages/Tools/MorseCode.html">摩尔斯电码破解器</a>
+						</li>
+					</ul>
+				</li>
+				<!-- 二级菜单:支持中心 -->
+				<li class="dropdown">
+					<a href="pages/signIn.html">
+						支持中心
+					</a>
+					<ul class="dropdown-content">
+						<li>
+							<a href="pages/signIn.html">开发中</a>
+						</li>
+						<li>
+							<a href="pages/signIn.html">开发中</a>
+						</li>
+					</ul>
+				</li>
+				<!-- 右浮动的一级菜单选项:登陆 -->
+				<li id="baiDu">
+					<a href="pages/login.html">
+						登陆
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+
+		<!-- 主要内容的div区域，存放网站页面的框架 -->
+		<div class="mainContent">
+			<div id="bgvideo">
+				<video class="fullscreenvideo" id="bgvid" width="100%" poster="img/dedsecX1.png" playsinline="" autoplay="" muted="" loop="">
+		        	<source src="img/Bg.mp4" type="video/mp4">
+		    	</video>
+			</div>
+		</div>
+	</body>
+</html>
